@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>
+            CSS cheat sheets
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- rel stands for relation -->
+        <style>
+            h1{
+                color: blue;
+            }
+            h2{
+                color: cyan;
+            }
+            /* this is internal css not recomended as we may have to use the same css in some other html */
+        </style>
+    </head>
+    <body>
+        <div class="container"> 
+                  <!--div is basically to point the whole block of text inside div with one name  -->
+            <h1 style="color: red;">Hello World</h1>
+            <!-- this is inline css -->
+            the inline css , this is a very bad way
+            <br>
+            we can also grab onto the element using id tag which is interal css still not the best way
+            <br>
+            and put style tags up in the head
+            <br>
+            local attributes have higher precedence than global attributes
+            <h2>this should be cyan</h2>
+
+            <div class="box1"> 
+                <h3>this is from the stylesheet</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit similique saepe 
+                    facilis vel aliquid! Officia minima ipsam itaque modi.
+                    Dolorum vitae deserunt eligendi quisquam incidunt, corrupti voluptatem repellendus illum.
+                </p>
+            </div>
+            <div class="box2"> 
+                    <h3>this is from the stylesheet</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit similique saepe 
+                        facilis vel aliquid! Officia minima ipsam itaque modi.
+                        Dolorum vitae deserunt eligendi quisquam incidunt, corrupti voluptatem repellendus illum.
+                    </p>
+            </div>
+            <div class="categories">
+                <h3>Cats</h3>
+                <ul>
+                    <!-- # will point to the same webpage -->
+                    <li><a href="#">Cat0</a></li>
+                    <li><a href="#">Cat1</a></li>
+                    <li><a href="#">Cat2</a></li>
+                    <li><a href="#">Cat3</a></li>
+                    <li><a href="#">Cat4</a></li>
+                </ul>
+            </div>
+
+            <!-- forms in HTML -->
+
+            <form class = "myForm">
+                <div class="form-group">
+                    <label>name: </label>
+                    <input type="text" name="name">
+                </div>
+                <div class="form-group">
+                    <label>email:</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="form-group">
+                    <label>message:</label>
+                    <textarea name="message">
+                    </textarea>
+                </div>
+                <input class="button" type="submit" value="Submit" name="">
+            </form>
+            <div class="block"> 
+                    <h3>this is from the stylesheet</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit similique saepe 
+                        facilis vel aliquid! Officia minima ipsam itaque modi.
+                        Dolorum vitae deserunt eligendi quisquam incidunt, corrupti voluptatem repellendus illum.
+                    </p>
+            </div>
+            <div class="block"> 
+                    <h3>this is from the stylesheet</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit similique saepe 
+                        facilis vel aliquid! Officia minima ipsam itaque modi.
+                        Dolorum vitae deserunt eligendi quisquam incidunt, corrupti voluptatem repellendus illum.
+                    </p>
+            </div>
+            <div class="block"> 
+                    <h3>this is from the stylesheet</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit similique saepe 
+                        facilis vel aliquid! Officia minima ipsam itaque modi.
+                        Dolorum vitae deserunt eligendi quisquam incidunt, corrupti voluptatem repellendus illum.
+                    </p>
+            </div>
+              <!-- this clear is importants else float fucks up the markup after float -->
+        <div class="clr" ></div>
+
+
+<!-- use ID for things which are unique -->
+<!-- though it makes no difference to most browsers even if you dont, they are treated the same as class -->
+        <div id="main-block">
+                <h3>this is from the stylesheet</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit similique saepe 
+                    facilis vel aliquid! Officia minima ipsam itaque modi.
+                    Dolorum vitae deserunt eligendi quisquam incidunt, corrupti voluptatem repellendus illum.
+                </p>
+        </div>
+        <div id="side-bar">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit similique saepe 
+                    facilis vel aliquid! Officia minima ipsam itaque modi.
+                    Dolorum vitae deserunt eligendi quisquam incidunt, corrupti voluptatem repellendus illum.
+                </p>
+        </div>
+        <div class="clr" ></div>
+        <div class="pBox">
+            <h1>Hello</h1>
+            <h2>Bye</h2>
+        </div>
+        <ul class="myList">
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ul>
+        </div>
+        <div class="clr"></div>
+        <a href="#" class="button fixMe">Helloooo</a>
+        <!-- so we dont have to look to the very bottom of the screen -->
+        <div style="margin-bottom: 300px"></div>
+    </body> 
+</html>

@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            Website
+        </title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+    
+            <!-- section – Used for grouping together thematically-related content. Sounds like a div element, but it’s not. The div has no semantic meaning. Before replacing all your div’s with section elements, always ask yourself: “Is all of the content related?”
+
+            aside – Used for tangentially related content. Just because some content appears to the left or right of the main content isn’t enough reason to use the aside element. Ask yourself if the content within the aside can be removed without reducing the meaning of the main content. Pullquotes are an example of tangentially related content.
+            
+            header – There is a crucial difference between the header element and the general accepted usage of header (or masthead). There’s usually only one header or ‘masthead’ in a page. In HTML5 you can have as many as you want. The spec defines it as “a group of introductory or navigational aids”. You can use a header in any section on your site. In fact, you probably should use a header within most of your sections. The spec describes the section element as “a thematic grouping of content, typically with a heading.”
+            
+            nav – Intended for major navigation information. A group of links grouped together isn’t enough reason to use the nav element. Site-wide navigation, on the other hand belongs in a nav element.
+            
+            footer – Sounds like its a description of the position, but its not. Footer elements contain informations about its containing element: who wrote it, copyright, links to related content, etc. Whereas we usually have one footer for an entire document, HTML5 allows us to also have footer within sections. -->
+            
+
+            <!-- article – Used for element that specifies independent, self-contained content. An article should make sense on its own. Before replacing all your div’s with article elements, always ask yourself: “Is it possible to read it independently from the rest of the web site?” -->
+        
+        <!-- Headings in the Header -->
+        <header id="myHeader">
+            <div class="container">
+                <h1>Website</h1>
+            </div>
+        </header>
+        <!-- Main navigation links here -->
+        <nav id="navbar">
+                <div class="container">
+                    <ul>
+                        <li> <a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <!-- defines a section in the document like article , chapter -->
+        <section id="showcase">
+            <div class="container">
+                <h1>HIIIII</h1>
+                <p>this is some text right here in showcase</p>
+            </div>
+        </section>
+
+        <div class="container">
+        <section id="main">
+            <h1>Hi</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aliquid quas dolorem esse 
+                sequi est provident. Eos exercitationem asperiores libero repellendus blanditiis eveniet,
+                optio eaque doloribus natus deserunt, aperiam commodi?
+            </p>
+        </section>
+        <!-- aside is for the side content -->
+        <aside id="sidebar">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aliquid quas dolorem esse 
+                sequi est provident. 
+            </p>
+        </aside>
+        <div class="clr"></div>
+        </div>  
+        <footer id="myFooter">
+            <p>Copyright &copy; 2018 Website </p>
+        </footer>
+    </body>
+</html>

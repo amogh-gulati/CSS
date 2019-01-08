@@ -1,0 +1,105 @@
+body{
+    background-color: #f4f4f4f4;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    /* so that there is no scrollbar ever if something goes outside of this container */
+    overflow: hidden;
+}
+
+#myHeader{
+    background-color: coral;
+    color: white;
+}
+
+#navbar{
+    background-color: #333333;
+    color: #fff;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+#navbar a:hover{
+    color:#f4f4f4f4;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#showcase {
+    background-image: url('../images//image.jpg');
+    text-align: center;
+    min-height: 200px;
+}
+
+#showcase h1{
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+#main{
+    float: left;
+    width: 70%;
+    padding: 0 30px 0 0 ;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background: darkgray;
+    color: white;
+    padding: 10px;   
+    margin-top:20px;
+    box-sizing: border-box;
+}
+
+#myFooter{
+    background: #333333;
+    color: white;
+    text-align: center;
+    margin:20px 0;
+    padding: 20px;
+    position:relative;
+}
+
+#myFooter p{
+    bottom: 5px;
+}
+
+/* CONDITIONALS */
+/* we can also add sort of conditionals */
+
+@media(max-width:600px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+}

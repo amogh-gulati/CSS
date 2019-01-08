@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            grids
+        </title>
+        <style>
+            .wrapper{
+                display: grid;
+                /* this value would be continued to be followed  */
+                /* this is like the ratios in the flex and its the recommended way */
+                /* grid-template-columns: 1fr 2fr 1fr; */
+
+                /* for same fractions */
+
+                grid-template-columns: repeat(3, 1fr );   /*this will repeat the 1fr 3 times*/
+
+                /* we can also do */
+
+                /*grid-template-columns: repeat(3, 1fr 3fr);   /*this will repeat the 1fr 3fr 3 times*/  
+
+
+                /* for spacing */
+                grid-column-gap: 1em;
+                grid-row-gap: 2em;
+
+                /* for row size */
+                /* grid-auto-rows: 100px; /*but this may lead to overflow */
+                grid-auto-rows: minmax(100,auto);
+
+            }
+            .wrapper > div{
+                background-color: lightgray;
+                padding: 1em;
+            }
+
+            div :nth-child(odd){
+                background-color: gray;
+            }
+
+            .nested {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 1em;
+            }
+
+            .nested div{
+                border: 1px black solid;
+                padding: 2px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                Lorem ipsum dolor sit, amcupiditate quaerat amet libero. Obcaecati, vel deleniti.
+            </div>    
+            <div>
+                Lorem ipsum dolor sit, amcupiditate quaerat amet libero. Obcaecati, vel deleniti.
+            </div>    
+            <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum eum saepe hic ipsum autem laudantium, deleniti provident dolores qui optio maiores, quas quibusdam laboriosam nulla. Quos fugiat repellat incidunt beatae nihil impedit voluptates vero, quidem harum, aspernatur ex perspiciatis.
+            </div>
+                <!-- nested grids -->
+            <div class="nested">
+                <div>lorem</div>
+                <div>lorem</div>
+                <div>lorem</div>
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amcupiditate quaerat amet libero. Obcaecati, vel deleniti.
+            </div>    
+            <div>
+                Lorem ipsum dolor sit, amcupiditate quaerat amet libero. Obcaecati, vel deleniti.
+            </div>    
+            <div>
+                Lorem ipsum dolor sit, amcupiditate quaerat amet libero. Obcaecati, vel deleniti.
+            </div>    
+            <div>
+                Lorem ipsum dolor sit, amcupiditate quaerat amet libero. Obcaecati, vel deleniti.
+            </div>    
+            <div>
+                Lorem ipsum dolor sit, amcupiditate quaerat amet libero. Obcaecati, vel deleniti.
+            </div>    
+        </div>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>
+            flexbox
+        </title>
+        <style>
+
+
+            /* NOW THE STYLES IN IT WILL ONLY WORK IS WIDHT>600PX */
+            @media(min-width:600px){
+                    .container{
+                    /* this would make them all in flexbox style */
+                    display: flex;
+                    /* NOTE ON POSITION OF FLEX ELEMETNS     */
+                    /*the disable equalizing the heights of all the elements  */
+                    /* by default its align-items:stretch */
+                    /* items start from top */
+                    /* align-items: flex-start; */
+                    /* items start from bottom */
+                    /* align-items: flex-end; */
+                    /* items come to center */
+                    /* align-items: center; */
+
+
+                    /* to set the flex direction to column */
+                    /* flex-direction: column; */
+                }
+
+                .container2{
+                    display: flex;
+
+                    /* CONTENT JUSTIFICATION */
+
+                    /* equal white space between all the flex items , margins between and also on the sides*/
+                    /* justify-content: space-around; */
+                    /* towards right */
+                    /* justify-content: flex-end; */
+                    /* margins in the center */
+                    justify-content: space-between;
+                }
+
+            }
+
+            .container3{
+                display: flex;
+                /* content will be push down like text wraping */
+                flex-wrap: wrap;
+            }
+
+            .container div,.container2 div,.container3 div{
+                border: 1px black solid;
+                padding: 10px;
+            }
+            .box1{
+                /* size ratio */
+                flex: 1;
+                /* we want this to be in the middle */
+                order:2;
+            }
+            .box2{
+                flex: 1;
+                order:1;
+            }
+            .box3{
+                /* would take up more space */
+                flex: 2;
+                order:3;
+            }
+            .c2box{
+                /* we would have 20% for each box */
+                /* width: 20%; */
+                /* similar thing to width 20%, width also works btw */
+                flex-basis: 25%;
+            }
+
+            
+            .c3box{
+                /* we would have 20% for each box */
+                /* width: 20%; */
+                /* similar thing to width 20%, width also works btw */
+                flex-basis: 25%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box1">
+                <h1>This is Box1</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nam asperiores ex vel est recusandae dolorum, eum eos quasi distinctio non quibusdam totam aliquam quo error iste minima omnis voluptatem.
+            </div>
+            <div class="box2">
+                <h1>This is Box2</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia culpa deleniti tempore rerum quo doloremque voluptatibus, vitae obcaecati, corporis in quam at, illo placeat necessitatibus officiis fugit nemo labore.
+            </div>
+            <div class="box3">
+                <h1>This is Box3</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia culpa deleniti tempore rerum quo doloremque voluptatibus, vitae obcaecati, corporis in quam at, illo placeat necessitatibus officiis fugit nemo labore.
+            </div>
+        </div>
+        <div class="container2">
+            <div class="c2box">
+                <h1>This is Box1</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nam asperiores ex vel est recusandae dolorum, eum eos quasi distinctio non quibusdam totam aliquam quo error iste minima omnis voluptatem.
+            </div>
+            <div class="c2box">
+                <h1>This is Box2</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia culpa deleniti tempore rerum quo doloremque voluptatibus, vitae obcaecati, corporis in quam at, illo placeat necessitatibus officiis fugit nemo labore.
+            </div>
+            <div class="c2box">
+                <h1>This is Box3</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia culpa deleniti tempore rerum quo doloremque voluptatibus, vitae obcaecati, corporis in quam at, illo placeat necessitatibus officiis fugit nemo labore.
+            </div>
+        </div>
+        <div class="container3">
+            <div class="c3box">
+                <h1>This is Box1</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nam asperiores ex vel est recusandae dolorum, eum eos quasi distinctio non quibusdam totam aliquam quo error iste minima omnis voluptatem.
+            </div>
+            <div class="c3box">
+                <h1>This is Box2</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia culpa deleniti tempore rerum quo doloremque voluptatibus, vitae obcaecati, corporis in quam at, illo placeat necessitatibus officiis fugit nemo labore.
+            </div>
+            <div class="c3box">
+                <h1>This is Box3</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia culpa deleniti tempore rerum quo doloremque voluptatibus, vitae obcaecati, corporis in quam at, illo placeat necessitatibus officiis fugit nemo labore.
+            </div>
+        </div>
+    </body>
+</html>
